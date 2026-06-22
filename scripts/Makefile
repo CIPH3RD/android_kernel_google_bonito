@@ -39,11 +39,11 @@ hostprogs-y += unifdef docproc check-lc_ctype
 # These targets are used internally to avoid "is up to date" messages
 PHONY += build_unifdef build_docproc build_check-lc_ctype
 build_unifdef: $(obj)/unifdef
-	@:
+@:
 build_docproc: $(obj)/docproc
-	@:
+@:
 build_check-lc_ctype: $(obj)/check-lc_ctype
-	@:
+@:
 
 subdir-$(CONFIG_MODVERSIONS) += genksyms
 subdir-y                     += mod
